@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top-bar{
+            height: 200px;
+            width: 100%;
+            background-image: url(./others/red-background-waves-1392319652qJk.jpg);
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 3px solid white;
+        }
+        .top-bar img{
+            height: 20vh;
+            width: 50%;
+        }
+        ::-webkit-scrollbar{
+                width: 10px;
+            }
+            ::-webkit-scrollbar-track{
+                background: white;
+            }
+            ::-webkit-scrollbar-thumb{
+                background: red;
+                border-radius: 4px;
+            }
+        .background{
+            width: 100%;
+            height: 500px;
+            position: relative;
+
+        }
+        .background img{
+            height: 650px;
+            width: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .registration{
+            position: absolute;
+            z-index: 1;
+            left: 25%;
+            top: 10%;
+            /* transform: translate(-50%,-50%); */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 65vh;
+            width: 50%;
+            background-color: rgba(255, 255, 255, 0.308);
+        }
+        .content{
+            width: 50%;
+            /* border: 1px solid black; */
+            display: flex;
+            margin-top: -30px;
+            flex-direction: column;
+            align-items: start;
+        }
+        .content p{
+            font-family: arial;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+        .content input{
+            height: 40px;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.459);
+            color: white;
+            font-size: 15px;
+            font-family: arial;
+        }
+        .btn{
+            height: 40px;
+            width: 100%;
+            background-color: red;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        @media (max-width: 450px){
+            .top-bar{
+                height: 150px;
+            }
+            .top-bar img{
+            height: 15vh;
+            width: 50%;
+        }
+        .registration{
+            position: absolute;
+            z-index: 1;
+            left: 0%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 65vh;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.308);
+        }
+        .content{
+            width: 70%;
+            /* border: 1px solid black; */
+            display: flex;
+            margin-top: -30px;
+            flex-direction: column;
+            align-items: start;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <img src="./others/masthead-luckydraw@2x.png" alt="image">
+    </div>
+    <div class="background">
+        <img src="./others/157364-abstract-red-background-vector-illustration.jpg" alt="image">
+        <div class="registration">
+            <p style="font-family: arial; font-size: 30px; font-weight: bolder; color: rgb(66, 16, 16);">Register for Luck-Draw</p>
+            <div class="content">
+                <p style="margin-left:0% ;">Name:</p>
+                <input type="text" placeholder="Enter Your Name">
+                <p style="margin-left:0% ;">Gmail:</p>
+                <input type="email" placeholder="Enter Your Gmail">
+                <p style="margin-left:0% ;">Mobile No:</p>
+                <input type="number" placeholder="Enter Mobile Nuber">
+               
+
+            </div>
+           <a href="./others/spin.html" style="width: 20%; height: 40px; margin-top: 20px;"><button class="btn">Register</button></a>
+        </div>
+    </div>
+    
+</body>
+</html>
